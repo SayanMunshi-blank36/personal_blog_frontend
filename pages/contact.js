@@ -76,7 +76,7 @@ const Contact = () => {
               <input
                 type="hidden"
                 name="_next"
-                value="http://localhost:3000/contact"
+                value="https://sayan-munshi-blogs.vercel.app/contact"
               />
               <div className="p-2 w-full">
                 <button
