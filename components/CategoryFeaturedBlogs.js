@@ -90,11 +90,10 @@ const CategoryFeaturedBlogs = ({ category, blogs }) => {
               <div key={blog.id}>
                 <a href={`/blog/${blog.attributes.slug}`}>
                   <Image
-                    className="rounded-md"
+                    className="rounded-md hover:opacity-95"
                     src={`${blog.attributes.cover.data.attributes.url}`}
                     width={500}
                     height={300}
-                    className="hover:opacity-95"
                   />
                 </a>
                 <p className="mt-2 text-xs lg:text-sm text-accent font-semibold w-fit px-1">
