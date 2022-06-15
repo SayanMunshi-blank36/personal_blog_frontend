@@ -33,9 +33,10 @@ const Slug = ({ blogData }) => {
         </p>
         <ReactMarkdown
           className={styles.reactMarkdown}
-          children={blogData[0].attributes.blocks[0].body}
           transformImageUri={(uri) => (uri.startsWith("http") ? uri : `${uri}`)}
-        />
+        >
+          {blogData[0].attributes.blocks[0].body}
+        </ReactMarkdown>
       </div>
     </div>
   );
